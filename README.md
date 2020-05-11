@@ -1,5 +1,6 @@
 ## Prerequisites:
 1. install serverless `curl -o- -L https://slss.io/install | bash`
+
 ~~2. install serverless plugin `npm install -g serverless-kubeless`~~
 
 ## Steps
