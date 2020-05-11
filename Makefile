@@ -5,7 +5,7 @@ GOCLEAN=$(GOCMD) clean
 GOTEST=$(GOCMD) test
 GOGET=$(GOCMD) get
 BINARY_NAME=handler
-GOPATH=$(dir $(abspath $(firstword $(MAKEFILE_LIST))))
+GOPATH=$(pwd)
 
 all: deps build
 build: 
