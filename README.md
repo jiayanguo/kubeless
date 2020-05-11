@@ -12,21 +12,21 @@
 
    ` "serverless-kubeless": "^0.7.0"`
 3. create a `handler.go`
-```
-package kubeless
+    ```
+    package kubeless
 
-import (
-	"github.com/kubeless/kubeless/pkg/functions"
-)
+    import (
+	    "github.com/kubeless/kubeless/pkg/functions"
+    )
 
-// Foo sample function
-func Handler(event functions.Event, context functions.Context) (string, error) {
-	return "Hello world!", nil
-}
-```
+    // Foo sample function
+    func Handler(event functions.Event, context functions.Context) (string, error) {
+	    return "Hello world!", nil
+    }
+    ```
 4. call the function
 
-`serverless invoke -f go-echo -l --data 'hello!'
+    `serverless invoke -f go-echo -l --data 'hello!'`
 
 
 
